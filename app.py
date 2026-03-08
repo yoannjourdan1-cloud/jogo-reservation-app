@@ -164,9 +164,6 @@ def show_reservation_form(section, label, date, gs_row, gs_col):
 
         prenom = st.text_input("Prénom *", placeholder="Votre prénom")
         nom = st.text_input("Nom *", placeholder="Votre nom de famille")
-        nb_personnes = st.number_input(
-            "Nombre de personnes", min_value=1, max_value=20, value=1, step=1
-        )
 
         col_submit, col_cancel = st.columns(2)
         submitted = col_submit.form_submit_button(
@@ -178,7 +175,7 @@ def show_reservation_form(section, label, date, gs_row, gs_col):
             if not prenom.strip() or not nom.strip():
                 st.warning("Veuillez renseigner votre prénom et votre nom.")
             else:
-                display_name = f"{prenom.strip()} {nom.strip()} ({nb_personnes}p)"
+                display_name = f"{prenom.strip()} {nom.strip()}"
                 success, message = write_cell(gs_row, gs_col, display_name)
                 if success:
                     st.success(f"🎉 Réservation confirmée pour {prenom} {nom} !")
