@@ -7,7 +7,7 @@ import time
 # ─────────────────────────────────────────────
 # CONFIGURATION
 # ─────────────────────────────────────────────
-SPREADSHEET_ID = "1Al1Z4tCYYe_8OmecrTzHdtpwjf5cWALQ"
+SPREADSHEET_ID = "1SHAZ_aYKYEW2llawuNSX5iUf0f7JK__UztYod4GLfOo"
 SHEET_NAME = "Feuil1"
 PASSWORD = "JOGO2026"
 
