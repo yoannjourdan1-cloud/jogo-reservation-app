@@ -1,0 +1,8 @@
+# Ne jamais committer les secrets
+.streamlit/secrets.toml
+
+# Fichiers Python
+__pycache__/
+*.pyc
+*.pyo
+.env
